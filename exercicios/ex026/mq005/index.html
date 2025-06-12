@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
+
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <div onclick="clickMenu()">
+            <img src="menu_29dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Menu">
+        </div>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -22,10 +27,31 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium eos enim nulla architecto accusantium dicta voluptates aliquam obcaecati consequatur illum cumque fugiat doloremque ad molestiae ratione, esse tempora consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quibusdam, tempore laborum voluptatem itaque distinctio debitis cum minus necessitatibus in. Fugiat deserunt officiis nulla accusantium corporis voluptas asperiores facere aliquid!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur recusandae repellendus consequuntur aliquam animi voluptatibus saepe? Quo quisquam aliquam impedit dicta cumque commodi deleniti voluptatum ipsa, et velit dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus alias molestiae earum minus atque repellendus, inventore minima, quam sapiente sed libero consequatur praesentium voluptas dolore architecto quae nihil voluptatum!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit, odit iusto, iste ea excepturi tempore nemo magni officia id dolorum numquam maxime soluta. Porro nisi et distinctio quis ullam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illo minus aperiam iste ipsum quo beatae eos quas expedita iusto, ratione corrupti impedit inventore soluta harum animi accusantium voluptatem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium eos enim nulla architecto
+                accusantium dicta voluptates aliquam obcaecati consequatur illum cumque fugiat doloremque ad molestiae
+                ratione, esse tempora consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+                quibusdam, tempore laborum voluptatem itaque distinctio debitis cum minus necessitatibus in. Fugiat
+                deserunt officiis nulla accusantium corporis voluptas asperiores facere aliquid!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur recusandae repellendus
+                consequuntur aliquam animi voluptatibus saepe? Quo quisquam aliquam impedit dicta cumque commodi
+                deleniti voluptatum ipsa, et velit dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, ducimus alias molestiae earum minus atque repellendus, inventore minima, quam sapiente sed
+                libero consequatur praesentium voluptas dolore architecto quae nihil voluptatum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit, odit iusto, iste ea excepturi
+                tempore nemo magni officia id dolorum numquam maxime soluta. Porro nisi et distinctio quis ullam! Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illo minus aperiam iste ipsum quo beatae
+                eos quas expedita iusto, ratione corrupti impedit inventore soluta harum animi accusantium voluptatem.
+            </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display =='block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            } 
+        }
+    </script>
 </body>
 </html>
